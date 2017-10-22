@@ -1,13 +1,17 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
+using Xunit;
 
-namespace IcuAVE
+namespace IcuAVE.xUnit
 {
     public class AVETest
     {
-        [Test]
+        [Fact]
         public void TestAccessViolationException()
         {
             string fileName = Path.GetTempFileName();
@@ -17,7 +21,7 @@ namespace IcuAVE
 
             // Copy the file to the local system. The error only occurs when using a FileStream
             // to read the data. It doesn't happen when using a ManifestResourceStream.
-            using (var source = GetType().Assembly.GetManifestResourceStream("IcuAVE.fail-scenario-1.txt"))
+            using (var source = GetType().Assembly.GetManifestResourceStream("IcuAVE.xUnit.fail-scenario-1.txt"))
             using (Stream destination = new FileStream(fileName, FileMode.Create, FileAccess.Write, FileShare.Read))
             {
                 source.CopyTo(destination);
@@ -56,7 +60,7 @@ namespace IcuAVE
             {
                 var locale = new global::Icu.Locale("en_US");
 
-                using (var stream = new FileStream(fileName, FileMode.Open, FileAccess.Read,FileShare.Read))
+                using (var stream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
                     using (StreamReader reader = new StreamReader(stream))
                     {
