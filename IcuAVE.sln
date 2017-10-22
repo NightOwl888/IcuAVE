@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IcuAVE", "IcuAVE\IcuAVE.csproj", "{4C65AF61-D0AB-474F-B633-54EEA1325D1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C65AF61-D0AB-474F-B633-54EEA1325D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C65AF61-D0AB-474F-B633-54EEA1325D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C65AF61-D0AB-474F-B633-54EEA1325D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C65AF61-D0AB-474F-B633-54EEA1325D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4317DA30-5338-4C01-94A9-D2A1A19CDF45}
+	EndGlobalSection
+EndGlobal
