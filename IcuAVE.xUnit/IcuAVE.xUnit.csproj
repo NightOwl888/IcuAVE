@@ -63,7 +63,6 @@
     <Compile Include="AVETest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="fail-scenario-1.txt" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IcuAVE\IcuAVE.csproj">
+      <Project>{4c65af61-d0ab-474f-b633-54eea1325d1f}</Project>
+      <Name>IcuAVE</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Icu4c.Win.Full.Lib.59.1.10-beta\build\Icu4c.Win.Full.Lib.targets" Condition="Exists('..\packages\Icu4c.Win.Full.Lib.59.1.10-beta\build\Icu4c.Win.Full.Lib.targets')" />

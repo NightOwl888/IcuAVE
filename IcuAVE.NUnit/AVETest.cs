@@ -1,10 +1,10 @@
-﻿using Xunit;
+﻿using NUnit.Framework;
 
-namespace IcuAVE.xUnit
+namespace IcuAVE.NUnit
 {
     public class AVETest
     {
-        [Fact]
+        [Test]
         public void TestAccessViolationException()
         {
             new IcuAVE.Test().RunTest();

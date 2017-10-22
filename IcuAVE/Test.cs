@@ -1,14 +1,11 @@
-﻿using NUnit.Framework;
-using System;
-using System.IO;
+﻿using System.IO;
 using System.Threading;
 
 namespace IcuAVE
 {
-    public class AVETest
+    public class Test
     {
-        [Test]
-        public void TestAccessViolationException()
+        public void RunTest()
         {
             string fileName = Path.GetTempFileName();
 
